@@ -131,7 +131,7 @@
             </CheckboxGroup>
             </Col>
             <Col span="10" style="text-align: right">
-              <span class="register">免费注册</span>
+              <span class="register" @click="register">免费注册</span>
             </Col>
           </Row>
           <Button type="success" long @click="enter">登录</Button>
