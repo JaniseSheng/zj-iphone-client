@@ -15,33 +15,29 @@
         </div>
       </article>
     </div>
-    <Menu mode="horizontal" :theme="theme1" active-name="2" :class="$style.menu" @on-select="selectMenu">
-      <MenuItem name="1">
-        <Icon type="ios-paper"></Icon>
+    <Menu mode="horizontal" :theme="theme1" :active-name="$route.name" :class="$style.menu" @on-select="selectMenu">
+      <MenuItem name="2-1">
         Hot  最热推荐
       </MenuItem>
-      <MenuItem name="2">
-        <Icon type="ios-people"></Icon>
+      <MenuItem name="2-2">
         Order  提交订单
       </MenuItem>
-      <MenuItem name="3">
-        <Icon type="ios-people"></Icon>
+      <MenuItem name="2-3">
         History  历史订单
       </MenuItem>
-      <MenuItem name="4">
-        <Icon type="settings"></Icon>
+      <MenuItem name="2-4">
         Account  交易记录
       </MenuItem>
-      <MenuItem name="5">
-        <Icon type="settings"></Icon>
+      <MenuItem name="2-5">
         Data  我的资料
       </MenuItem>
-      <MenuItem name="6">
-        <Icon type="settings"></Icon>
+      <MenuItem name="2-6">
         Service  产品服务
       </MenuItem>
     </Menu>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -72,7 +68,7 @@
     },
     methods: {
       selectMenu(e) {
-        const name = '2-' + e
+        const name = e
         this.$router.push({
           name
         })
@@ -139,4 +135,3 @@
     }
   }
 </style>
-
