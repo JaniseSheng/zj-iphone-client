@@ -93,15 +93,6 @@
   .header {
     position: relative;
     display: flex;
-    &:after {
-      content: "";
-      position: absolute;
-      left: 12px;
-      right: 12px;
-      bottom: 0;
-      height: 1px;
-      background-color: @border-color;
-    }
   }
   .message {
     margin-left: 50px;

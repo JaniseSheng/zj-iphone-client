@@ -9,6 +9,7 @@ import history from '@/pages/history/history'
 import service from '@/pages/service/service'
 import submitOrder from '@/pages/submitOrder/submitOrder'
 import myData from '@/pages/myData/myData'
+import order from '@/pages/order/order'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
           path: '/service',
           name: '2-6',
           component: service
+        },
+        {
+          path: '/submitOrder',
+          name: '2-7',
+          component: order
         }
       ]
     }
