@@ -33,7 +33,7 @@ module.exports = {
     proxyTable: {
       // proxy all requests starting with /api to jsonplaceholder
       '/api': {
-       target: 'http://192.168.100.172:8080',//http://192.168.1.161:8083 http://192.168.100.172:8080
+       target: 'http://172.16.16.133:8080/iphone/',//http://192.168.1.161:8083 http://192.168.100.172:8080
        /* target: 'http://192.168.40.248:8083',*/
         changeOrigin: true,
         pathRewrite: { //需要rewrite重写的, 如果在服务器端做了处理则可以不要这段
