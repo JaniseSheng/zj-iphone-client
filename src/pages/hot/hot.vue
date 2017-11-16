@@ -1,6 +1,6 @@
 <template>
   <div class="hot" :class="$style.hot">
-      <Card v-for="item in 10">
+      <Card v-for="(item, index) in 10" :key="'card' + index">
          <p slot="title">
              GSD
          </p>

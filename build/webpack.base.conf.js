@@ -11,7 +11,7 @@ function resolve(dir) {
 module.exports = {
   entry: {
     app: [
-      './src/main.js', ...config.preLoadAssets
+      './src/main.js'
     ]
   },
   output: {
@@ -25,12 +25,12 @@ module.exports = {
     extensions: [
       '.js', '.vue', '.json'
     ],
-    alias: Object.assign({}, {
+    alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'base': resolve('src/base'),
       '~': resolve('node_modules')
-    }, config.assetsAlias)
+    }
   },
 
   module: {

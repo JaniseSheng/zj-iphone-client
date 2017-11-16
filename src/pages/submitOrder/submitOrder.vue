@@ -13,12 +13,12 @@
         <span>关键字:</span>
         <Input v-model="value" placeholder="请输入服务关键字、服务代码" style="width: 300px;margin-left: 20px;"></Input>
       </div>
-      <Card v-for="item in 4">
+      <Card v-for="(item, index) in 4" :key="'subcard' + index">
         <p slot="title">
             INFO Checks 查询服务
         </p>
         <ul>
-            <li v-for="item in 6" @click="submitOrder">
+            <li v-for="(item, index) in 6" :key="'cardli' + index" @click="submitOrder">
                 <span>
                        #1001# GSX Carrier Checker 完全策略信息有锁无锁查运营商 快 -- 5.00RMB-- 1~3小时
                 </span>

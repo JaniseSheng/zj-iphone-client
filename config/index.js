@@ -47,14 +47,5 @@ module.exports = {
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
     cssSourceMap: false
-  },
-
-  preLoadAssets: [
-    resolve('node_modules/print.js/dist/print.min.js'),
-    resolve('node_modules/print.js/dist/print.min.css')
-  ],
-
-  assetsAlias: {
-    'md5': resolve('node_modules/blueimp-md5/js/md5.min.js')
   }
 }

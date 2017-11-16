@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.myDate">
-    <Card v-for="item in 4">
+    <Card v-for="(item, index) in 4" :key="'service' + index">
       <p slot="title">
           INFO Checks 查询服务
       </p>
